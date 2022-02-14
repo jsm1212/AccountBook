@@ -38,9 +38,9 @@ class DBHelper(context:Context, filename:String) : SQLiteOpenHelper(context,file
     }
 
     @SuppressLint("Range")
-    fun select() : MutableList<Account> {
+    fun select(vo: Account) : MutableList<Account> {
         val list = mutableListOf<Account>()
-        var sql = " SELECT * FROM ACCOUNT "
+        var sql = " SELECT * FROM ACCOUNT WHERE DATE"
         var db = this.readableDatabase
         var cursor = db.rawQuery(sql, null)
 

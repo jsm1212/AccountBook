@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(private val context: Context, private val dataList: ArrayList<Account>) : RecyclerView.Adapter<ItemViewHolder>(){
+class CustomAdapter(private val context: Context, private val dataList: MutableList<Account>) : RecyclerView.Adapter<ItemViewHolder>(){
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_layout, parent, false)
         return ItemViewHolder(view)
