@@ -30,8 +30,8 @@ class InsertActivity : AppCompatActivity() {
 
         insertBtn.setOnClickListener {
 
-            var date = datePicker.year.toString() + "/" +
-                    "" + (datePicker.month + 1).toString() + "/" + datePicker.dayOfMonth.toString()
+            var date = datePicker.year.toString() +
+                    (datePicker.month + 1).toString() +  datePicker.dayOfMonth.toString()
 
             val account = Account(0, type, pay.text.toString().toInt(), date, content.text.toString())
 

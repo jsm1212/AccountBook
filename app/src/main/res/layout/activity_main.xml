@@ -24,7 +24,7 @@
             android:layout_height="83dp" android:id="@+id/goInsert"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.154" app:layout_constraintVertical_bias="0.396"/>
+            app:layout_constraintHorizontal_bias="0.086" app:layout_constraintVertical_bias="0.531"/>
     <Button
             android:text="검색"
             android:textSize="20dp"
@@ -32,22 +32,14 @@
             android:layout_height="83dp" android:id="@+id/goSearch"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.869" app:layout_constraintVertical_bias="0.396"/>
+            app:layout_constraintHorizontal_bias="0.485" app:layout_constraintVertical_bias="0.531"/>
     <Button
-            android:text="기간 검색"
+            android:text="기간별 검색"
             android:textSize="20dp"
             android:layout_width="159dp"
             android:layout_height="83dp" android:id="@+id/goSearch2"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.154" app:layout_constraintVertical_bias="0.626"/>
-    <Button
-            android:text="Button"
-            android:textSize="20dp"
-            android:layout_width="159dp"
-            android:layout_height="83dp" android:id="@+id/button4"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.869" app:layout_constraintVertical_bias="0.626"/>
+            app:layout_constraintHorizontal_bias="0.877" app:layout_constraintVertical_bias="0.531"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,5 +6,53 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".SearchActivity">
+    <TextView
+            android:text="검색"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_width="122dp"
+            android:layout_height="52dp" android:id="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"/>
+    <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="443dp"
+            android:layout_height="276dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false" tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.503" app:layout_constraintVertical_bias="0.146"/>
+    <Button
+            android:id="@+id/normalSearchBtn"
+            android:text="검색"
+            android:textSize="20dp"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.501" app:layout_constraintVertical_bias="0.446"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#808080" tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.512"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="530dp"
+            android:layout_height="402dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/normalSearchBtn"
+            android:id="@+id/recyclerview" app:layout_constraintVertical_bias="0.659"/>
+    <Button
+            android:text="메뉴로"
+            android:layout_width="110dp"
+            android:layout_height="56dp" android:id="@+id/goMenuBtn"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.968" app:layout_constraintVertical_bias="0.017"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

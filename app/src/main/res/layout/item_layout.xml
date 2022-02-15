@@ -5,8 +5,31 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:bottom="1dp"
+        android:left="-2dp"
+        android:right="-2dp"
+        android:top="-2dp"
+        android:shape="rectangle"
+        android:width="1dp"
+        android:color="#dcdcdc"
 
+>
+
+    <TextView
+            android:text="금액"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView8"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.198" app:layout_constraintVertical_bias="0.804"/>
+    <TextView
+            android:text="내용"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView9"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524" app:layout_constraintVertical_bias="0.512"/>
     <TextView
             android:text="수입/지출"
             android:gravity="center"
@@ -18,23 +41,33 @@
             app:layout_constraintVertical_bias="0.428"/>
     <TextView
             android:text="날짜"
-            android:layout_width="186dp"
-            android:layout_height="19dp" android:id="@+id/textDate"
+            android:gravity="center"
+            android:layout_width="129dp"
+            android:layout_height="20dp" android:id="@+id/textDate"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.267" app:layout_constraintVertical_bias="0.153"/>
+            app:layout_constraintHorizontal_bias="0.314" app:layout_constraintVertical_bias="0.125"/>
     <TextView
             android:text="내용"
-            android:layout_width="274dp"
-            android:layout_height="33dp" android:id="@+id/textContent"
+            android:gravity="center"
+            android:layout_width="239dp"
+            android:layout_height="41dp" android:id="@+id/textContent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.949" app:layout_constraintVertical_bias="0.513"/>
+            app:layout_constraintHorizontal_bias="0.993" app:layout_constraintVertical_bias="0.523"/>
     <TextView
             android:text="금액"
-            android:layout_width="186dp"
-            android:layout_height="22dp" android:id="@+id/textPay"
+            android:gravity="center"
+            android:layout_width="131dp"
+            android:layout_height="24dp" android:id="@+id/textPay"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.267" app:layout_constraintVertical_bias="0.8"/>
+            app:layout_constraintHorizontal_bias="0.315" app:layout_constraintVertical_bias="0.777"/>
+    <TextView
+            android:text="날짜"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView7"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.199" app:layout_constraintVertical_bias="0.146"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,9 +38,9 @@ class DBHelper(context:Context, filename:String) : SQLiteOpenHelper(context,file
     }
 
     @SuppressLint("Range")
-    fun select(vo: Account) : MutableList<Account> {
+    fun selectRange(startDate:String, endDate:String) : MutableList<Account> {
         val list = mutableListOf<Account>()
-        var sql = " SELECT * FROM ACCOUNT WHERE DATE"
+        var sql = " SELECT * FROM ACCOUNT WHERE date BETWEEN '${startDate}' AND '${endDate}' "
         var db = this.readableDatabase
         var cursor = db.rawQuery(sql, null)
 
@@ -54,5 +54,24 @@ class DBHelper(context:Context, filename:String) : SQLiteOpenHelper(context,file
         }
         return list
     }
+
+    @SuppressLint("Range")
+    fun select(date:String) : MutableList<Account> {
+        val list = mutableListOf<Account>()
+        var sql = " SELECT * FROM ACCOUNT WHERE date = '${date}' "
+        var db = this.readableDatabase
+        var cursor = db.rawQuery(sql, null)
+
+        while(cursor.moveToNext()){
+            val type = cursor.getString(cursor.getColumnIndex("type"))
+            val pay = cursor.getInt(cursor.getColumnIndex("pay"))
+            val date = cursor.getString(cursor.getColumnIndex("date"))
+            val content = cursor.getString(cursor.getColumnIndex("content"))
+
+            list.add(Account(0, type, pay, date, content))
+        }
+        return list
+    }
+
 
 }
